@@ -1,47 +1,113 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Test Demo</title>
-      <script src= "http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-
-    <link rel ="stylesheet" href="style.css" titel= media= "screen" charset ="utf-8">
-
-
+    <title>IDPs of Syria</title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
+    <script src="scripts/script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen" charset="utf-8">
   </head>
+
   <body>
 
     <div class="page">
-      <div class="map">
+      <div class="catcher">
+        «Internally displaced people legally remain under the protection of their own government,
+        even though that government might be the reason of their flight.»
+      </div>
+      <div class="scroll-down">
+        Scroll down
+      </div>
+    </div>
 
-          <svg class="graph" id="svg" x="0px" y="0px"
-  	         width=70% height=70% viewBox="0 0 1000 707.077" enable-background="new 0 0 1000 707.077">
-                <polygon class="outline" id="outline_map"
-                  points="505.674,647.756 818.156,460.521 839.663,406.121 840.927,318.829 854.844,302.383 854.844,269.49 835.868,237.862 847.253,179.667 902.917,170.812 950.992,105.026
-                    	950.992,91.11 939.605,69.294 918.099,93.64 790.323,103.761 625.86,165.751 604.353,164.486 567.665,164.486 510.735,135.389
-                    	446.214,159.426 419.647,169.546 395.61,169.546 386.754,148.04 343.741,148.04 334.885,212.56 348.801,226.476 315.909,226.476
-                    	315.909,256.839 291.872,258.104 289.341,280.876 258.979,258.104 237.472,308.708 269.1,326.42 266.57,387.144 266.57,425.098
-                    	296.932,430.159 307.053,430.159 318.439,431.423 307.053,446.605 331.09,459.255 337.416,492.148 298.198,522.511 275.425,546.548
-                    	252.654,584.501 227.352,681.915 257.714,681.915 415.852,694.565 "/>
+    <div class="page">
+      <div class="visualisation-1">
+        <div class="text-wrap-v1">
+          <div class="text-wrap-title-1">
+            IDPs in Syria
+          </div>
+          <div class="text-wrap-type-1">
+            End 2014
+            <br><br><br><br>
+            Li Europan lingues es mem-bres del sam familie. Lor separat existentie es un myth.
+            <br><br>
+            • ~ 1000 Persons
+          </div>
+          <div class="button bv1-1">
+            Show me the IDPs
+          </div>
+          <div class="button bv1-2">
+            Show me the Refugees
+          </div>
+        </div>
+      </div>
+    </div>
 
-                      <rect x="984" opacity="0.4" width="33.759" height="118.841"/>
-                      <rect id="Rect2012" x="970" y="118.841"  width="33.759" height="118.842"/>
-                      <rect x="984" y="237.683" opacity="0.4" width="33.759" height="118.842"/>
-                      <rect x="984" y="357.598" opacity="0.4" width="33.759" height="118.841"/>
-                      <rect x="984" y="476.438" opacity="0.4" width="33.759" height="118.842"/>
-                      <text transform="matrix(1.192488e-08 -1 1 1.192488e-08 990 109.9189)" fill="#FFED00" font-family="'Helvetica'" font-size="12">2011</text>
-                      <text transform="matrix(1.192488e-08 -1 1 1.192488e-08 990 150)" fill="#FFED00" font-family="'Helvetica'" font-size="12">2012</text>
+    <div class="page">
+      <div class="background-page">
+      <div class="quote-what-is-an-idp">
+        «An internally displaced person (IDP) is someone who is forced to flee <br>
+        his or her home but who remains within his or her country's borders. <br>
+        They are often referred to refugees, although they do not fall within the <br>
+        current legal definition of a refugee.»
+      </div>
 
+      </div>
+    </div>
 
+    <div class="page">
+      <div id="clickme-idp">
+        <img src="img/idp_icon.png">
+      </div>
+      <div id="clickme-refugee">
+        <img src="img/refugee_icon.png">
+      </div>
+      <div class="what-is-an-idp">
+        <div class="title-what-is-an-idp">
+          What is an IDP?
+        </div>
+          <div class="definition-idp">
+            Definition of «IDP»<br>
+            <p>Internally displaced persons, or IDPs are among the world's most vulnerable people.
+            Unlike refugees, IDPs have not crossed an international border to find sanctuary
+            but have remained inside their home countries.</p>
+          </div>
+          <div class="definition-refugee">
+            Definition of «refugee»<br>
+            <p>A refugee, in contrast to a migrant, is according to the Geneva Convention on Refugees
+            applied to a person who is outside their home country of citizenship because they have
+            well-founded grounds for fear of persecution.</p>
+          </div>
+        <div id="img-definition">
+          <img src="img/camp.jpg" alt="camp">
+        </div>
+      </div>
+    </div>
 
-            </svg>
+    <div class="page">
+      <div class="quote-reasons">
+        «Sometimes expulsion is also used to remove certain ethnic or religious groups <br>
+        or any actual or alleged political opponents from an area in order <br>
+        to rob their land and use it for the cultivation of drugs or make
+        them accessible for agribusiness investors.»
+      </div>
+    </div>
+
+    <div class="page">
+      <div id="img-reasons">
+        <img src="img/escaping-homs.jpg" alt="escaping-homs">
       </div>
     </div>
 
 
-
-  <script src="script_map.js" charset="utf-8"></script>
+    <div class="progressbar-wrapper">
+      <div id="progressbar">
+      </div>
+    </div>
 
   </body>
+
+
+
+
 </html>

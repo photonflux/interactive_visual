@@ -1,0 +1,246 @@
+/*------------------------------------------------------------- OVERALL----*/
+
+@font-face {
+    font-family: 'MarkWeb-Bold';
+    src: url('MarkWeb-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MarkWeb';
+    src: url('MarkWeb.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  background-color: #FFED00;
+  font-family: 'MarkWeb-Bold', serif;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-family: 'MarkWeb';
+}
+
+.page {
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.progressbar-wrapper {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  position: fixed;
+}
+
+#progressbar {
+  background-color: black;
+  height: 10px;
+}
+
+
+
+/*------------------------------------------------------------- CATCHER----*/
+
+.catcher {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.scroll-down {
+  font-size: 1em;
+  width:100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(0, 0, 0, 0.2);
+  top: 80%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+/*------------------------------------------------------------- VISUALISATION 1----*/
+
+.visualisation-1 {
+  background-color: black;
+  width: 100%;
+}
+
+.text-wrap-v1 {
+  position: absolute;
+  width: 275px;
+  height: 410px;
+  background-color: #FFED00;
+  left: 50px;
+  margin-top: 50px;
+}
+
+.text-wrap-title-1 {
+  font-size: 2em;
+  padding: 20px;
+}
+
+.text-wrap-type-1 {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -10px;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+.bv1-1 {
+  height: 30px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.bv1-1:hover {
+  -webkit-transform: scale(1.05);
+ transform: scale(1.05);
+}
+
+.bv1-2 {
+  height: 30px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.bv1-2:hover {
+  -webkit-transform: scale(1.05);
+ transform: scale(1.05);
+}
+
+/*------------------------------------------------------------- QUOTE 1----*/
+
+.quote-what-is-an-idp {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  color: #FFED00;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.background-page {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+/*------------------------------------------------------------- WHAT IS AN IDP----*/
+
+#clickme-idp {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 70px;
+  margin-top: 300px;
+  cursor: pointer;
+}
+
+#clickme-idp:hover {
+  -webkit-transform: scale(1.05);
+ transform: scale(1.05);
+}
+
+#clickme-refugee {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 450px;
+  margin-top: 300px;
+  cursor: pointer;
+}
+
+#clickme-refugee:hover {
+  -webkit-transform: scale(1.05);
+ transform: scale(1.05);
+}
+
+.title-what-is-an-idp {
+  position: absolute;
+  left: 70px;
+  margin-top: 70px;
+  height: 75px;
+  width: 620px;
+  background-color: black;
+  color: white;
+  font-size: 5em;
+  padding: 20px;
+}
+
+.definition-idp {
+  position: absolute;
+  left: 70px;
+  margin-top: 400px;
+  width: 250px;
+  height: 200px;
+  padding: 15px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  background-color: black;
+  color: white;
+  display: none;
+}
+
+.definition-refugee {
+  position: absolute;
+  left: 450px;
+  margin-top: 400px;
+  width: 250px;
+  height: 200px;
+  padding: 15px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  background-color: black;
+  color: white;
+  display: none;
+}
+
+/*------------------------------------------------------------- QUOTE REASONS ----*/
+
+.quote-reasons {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  color: black;
+  transform: translateY(-50%);
+  position: relative;
+}
