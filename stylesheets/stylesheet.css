@@ -101,6 +101,22 @@ p {
   font-size: 1em;
   line-height: 1.3em;
 }
+#bv1-1 {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 70px;
+  margin-top: 300px;
+  cursor: pointer;
+}
+#bv1-2 {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 70px;
+  margin-top: 300px;
+  cursor: pointer;
+}
 
 .bv1-1 {
   height: 30px;
@@ -141,6 +157,22 @@ p {
   -webkit-transform: scale(1.05);
  transform: scale(1.05);
 }
+
+/*.population {
+  position: absolute;
+  margin-top: 50px;
+  padding: 15px;
+}
+.refugees {
+  position: absolute;
+  margin-top: 50px;
+  padding: 15px;
+}
+.idps {
+  position: absolute;
+  margin-top: 50px;
+  padding: 15px;
+}*/
 
 /*------------------------------------------------------------- QUOTE 1----*/
 
