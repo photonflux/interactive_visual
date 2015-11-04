@@ -30,6 +30,13 @@ p {
   overflow: hidden;
 }
 
+.graph{
+  height: 100%;
+  width: 80%;
+  right: 0px;
+
+}
+
 .button {
   cursor: pointer;
 }
@@ -258,12 +265,11 @@ p {
   position: absolute;
   left: 250 px;
   margin-top: 10px;
-  width: 500;
-  height: 780px;
+  width: 1000;
+  height: 700px;
   padding: 15px;
   font-size: 0.9em;
   line-height: 1.3em;
-  background-color: black;
   color: white;
   display: on;
 }
@@ -291,11 +297,19 @@ p {
 
 
 
-.circle {
-        stroke: red;
-        stroke-width: 2;
-        fill: #eee;
+
+.circle_idp {
+        stroke-width: 0;
+        fill: black;
+        opacity: 0.5;
       }
+
+.circle_dead {
+        stroke: red;
+        stroke-width: 0;
+        fill: red;
+        opacity: 0.5;
+        }
 
 .button_wrap_v1{
   position: absolute;

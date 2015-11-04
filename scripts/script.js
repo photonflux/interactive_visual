@@ -46,6 +46,11 @@ $(document).ready(function(){
     d.year2013 = parseInt(d.year2013);
     d.year2014 = parseInt(d.year2014);
     d.year2015 = parseInt(d.year2015);
+    d.idp2011 = parseInt(d.idp2011);
+    d.idp2012 = parseInt(d.idp2012);
+    d.idp2013 = parseInt(d.idp2013);
+    d.idp2014 = parseInt(d.idp2014);
+    d.idp2015 = parseInt(d.idp2015);
     d.cx = parseFloat(d.cx);
     d.cy = parseFloat(d.cy);
     return d;
@@ -57,8 +62,8 @@ $(document).ready(function(){
   var idp ="idp2011";
 
 
-      d3.csv('data.csv', convert, function(data){    //loading data
-        // console.log(data);
+      d3.csv('data2.csv', convert, function(data){    //loading data
+         console.log(data);
 
           groups = svg.selectAll('g')
                   .data(data)
@@ -66,30 +71,56 @@ $(document).ready(function(){
                     .append('g');
 
                     groups.append("circle")
-                    .attr('class', "circle1");
+                    .attr('class', "circle_idp")
+                     .attr("id", function(d) {
+                        return d.region; })
+                    .on("mouseover", function(d) {
+                            d3.select(this).attr('id')});    // presumes that <rect> has an id!
+                    // .attr('id', function(d){return d.region)});
 
                     groups.append("circle")
-                    .attr('class', "circle2");
+                    .attr('class', "circle_dead")
+                    .attr("id", function(d) {
+                       return d.region; })
+                    .on("mouseover", function(d) {
+                        d3.select(this).attr('id');// presumes that <rect> has an id!
+                          })
+
+
 
          update();
        });
 
+
+
+// selection.data([values[, key]])
+// function key(d) {
+//   return d.State;
+// }
+
+
+
   function update() {
 
-          var scale = d3.scale.linear()
-          .domain([0,13000])
-          .range([0,100]);
+          var scale_idp = d3.scale.linear()
+          .domain([0,1800000])
+          .range([0,250]);
 
-          groups.selectAll('.circle1')
-          .attr('r', function(d){ return scale(d[year]+d[year]); })
-          .attr('cx', function(d){ return d.cx; })
-          .attr('cy', function(d){ return d.cy; });
+          var scale_deaths = d3.scale.linear()
+          .domain([0,15000])
+          .range([0,40]);
 
-          groups.selectAll('.circle2')
-          .attr('r', function(d){ return scale(d[year]); })
+          groups.selectAll('.circle_idp')
+          .attr('r', function(d){ return scale_idp(d[idp]); })
           .attr('cx', function(d){ return d.cx; })
           .attr('cy', function(d){ return d.cy; })
-          .style("fill","red");
+
+
+          groups.selectAll('.circle_dead')
+          .attr('r', function(d){ return scale_deaths(d[year]); })
+          .attr('cx', function(d){ return d.cx; })
+          .attr('cy', function(d){ return d.cy; })
+
 
     }
 
@@ -118,12 +149,14 @@ $(document).ready(function(){
 
         $( "#clickme-year2014" ).on('click', function() {
         year= "year2014";
+        idp= "idp2014";
         console.log(year);
         update();
         });
 
         $( "#clickme-year2015" ).on('click', function() {
         year= "year2015";
+        idp= "idp2015";
         console.log(year);
         update();
         });
