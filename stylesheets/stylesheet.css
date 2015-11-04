@@ -212,9 +212,10 @@ p {
   padding: 15px;
   font-size: 0.9em;
   line-height: 1.3em;
-  background-color: black;
-  color: white;
-  display: none;
+  background-color: #FFED00;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .definition-refugee {
@@ -226,9 +227,13 @@ p {
   padding: 15px;
   font-size: 0.9em;
   line-height: 1.3em;
-  background-color: black;
-  color: white;
-  display: none;
+  background-color: #FFED00;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.show-definition {
+  opacity: 1;
 }
 
 /*------------------------------------------------------------- QUOTE REASONS ----*/
@@ -240,7 +245,17 @@ p {
   margin-left: auto;
   margin-right: auto;
   top: 50%;
-  color: black;
+  color: #FFED00;
   transform: translateY(-50%);
   position: relative;
+}
+
+/*------------------------------------------------------------- REASONS FOR DISPLACEMENT ----*/
+
+.reasons-for-displacement {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  margin-top: 100px;
+  font-size: 2em;
 }

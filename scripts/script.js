@@ -18,7 +18,6 @@ $(document).ready(function(){
           d = $(document).height(),
           c = $(window).height();
           scrollPercent = (s / (d-c)) * 100;
-          console.log(s,d,c);
           var position = scrollPercent;
 
      $("#progressbar").css('width', position+'%');
@@ -27,13 +26,15 @@ $(document).ready(function(){
 
   /*------------------------------------------------------------------------------ BUTTONS----*/
 
-  $( "#clickme-idp" ).on('click', function() {
-    $( ".definition-idp" ).fadeIn( "slow" );
+  $('.clickme').on('click', function(){
+    var target = $(this).data('target');
+    if($(target).hasClass('show-definition')){
+      $(target).removeClass('show-definition');
+    }else {
+      $(target).addClass('show-definition');;
+    }
   });
 
-  $( "#clickme-refugee" ).on('click', function() {
-    $( ".definition-refugee" ).fadeIn( "slow" );
-  });
 
 
 
