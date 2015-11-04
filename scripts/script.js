@@ -20,7 +20,7 @@ $(document).ready(function(){
           d = $(document).height(),
           c = $(window).height();
           scrollPercent = (s / (d-c)) * 100;
-          console.log(s,d,c);
+          // console.log(s,d,c);
           var position = scrollPercent;
 
      $("#progressbar").css('width', position+'%');
@@ -52,42 +52,81 @@ $(document).ready(function(){
   }
 
   var svg = d3.select('#svg');
+  var groups;
+  var year = "year2011";
+  var idp ="idp2011";
+
 
       d3.csv('data.csv', convert, function(data){    //loading data
         // console.log(data);
 
+          groups = svg.selectAll('g')
+                  .data(data)
+                  .enter()
+                    .append('g');
 
-        console.log(data);
-      var year = "year2011"
-      console.log(year);
+                    groups.append("circle")
+                    .attr('class', "circle1");
 
-      svg.selectAll('circle')
-              .data(data)
-              .enter()
-                .append('circle')
+                    groups.append("circle")
+                    .attr('class', "circle2");
 
-                update();
-        });
+         update();
+       });
 
-        function update() {
+  function update() {
 
           var scale = d3.scale.linear()
           .domain([0,13000])
           .range([0,100]);
 
-            svg.selectAll('circle')
-            .attr('r', function(d){ return scale(d[year]); })
-            .attr('cx', function(d){ return d.cx; })
-            .attr('cy', function(d){ return d.cy; });
-        }
+          groups.selectAll('.circle1')
+          .attr('r', function(d){ return scale(d[year]+d[year]); })
+          .attr('cx', function(d){ return d.cx; })
+          .attr('cy', function(d){ return d.cy; });
+
+          groups.selectAll('.circle2')
+          .attr('r', function(d){ return scale(d[year]); })
+          .attr('cx', function(d){ return d.cx; })
+          .attr('cy', function(d){ return d.cy; })
+          .style("fill","red");
+
+    }
 
 
-    $( "#clickme-year2012" ).on('click', function() {
-    year= "year2012";
-    console.log(year);
-    update();
-    });
 
+        $( "#clickme-year2011" ).on('click', function() {
+        year= "year2011";
+        idp= "idp2011";
+        console.log(year);
+        update();
+        });
+
+        $( "#clickme-year2012" ).on('click', function() {
+        year= "year2012";
+        idp= "idp2012";
+        console.log(year);
+        update();
+        });
+
+        $( "#clickme-year2013" ).on('click', function() {
+        year= "year2013";
+        idp= "idp2013";
+        console.log(year);
+        update();
+        });
+
+        $( "#clickme-year2014" ).on('click', function() {
+        year= "year2014";
+        console.log(year);
+        update();
+        });
+
+        $( "#clickme-year2015" ).on('click', function() {
+        year= "year2015";
+        console.log(year);
+        update();
+        });
 
 
 
