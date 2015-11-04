@@ -22,6 +22,8 @@ img {
 
 p {
   font-family: 'MarkWeb';
+  line-height: 1.4em;
+  font-size: 0.9em;
 }
 
 .page {
@@ -328,8 +330,6 @@ p {
   width: 250px;
   height: 200px;
   padding: 15px;
-  font-size: 0.9em;
-  line-height: 1.3em;
   background-color: #FFED00;
   color: black;
   opacity: 0;
@@ -343,8 +343,6 @@ p {
   width: 250px;
   height: 200px;
   padding: 15px;
-  font-size: 0.9em;
-  line-height: 1.3em;
   background-color: #FFED00;
   color: black;
   opacity: 0;
@@ -358,8 +356,6 @@ p {
   width: 250px;
   height: 200px;
   padding: 15px;
-  font-size: 0.9em;
-  line-height: 1.3em;
   background-color: #FFED00;
   color: black;
   opacity: 0;
@@ -373,8 +369,6 @@ p {
   width: 250px;
   height: 200px;
   padding: 15px;
-  font-size: 0.9em;
-  line-height: 1.3em;
   background-color: #FFED00;
   color: black;
   opacity: 0;
@@ -397,4 +391,15 @@ p {
   color: white;
   font-size: 2em;
   padding: 20px;
+}
+
+.background-image-number {
+  position: absolute;
+}
+
+.number-of-displacements-text {
+  position: absolute;
+  left: 70px;
+  margin-top: 200px;
+  width: 300px;
 }
