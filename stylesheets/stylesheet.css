@@ -477,5 +477,13 @@ p {
 .background-map {
   position: absolute;
   left: -90px;
-  margin-top: -10px;
+}
+
+.description {
+  position: absolute;
+  left: 200px;
+  height: 400px;
+  width: 290px;
+  margin-top: 170px;
+  padding: 15px;
 }
