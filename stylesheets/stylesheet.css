@@ -32,6 +32,14 @@ p {
   overflow: hidden;
 }
 
+.graph{
+  height: 100%;
+  width: 80%;
+  right: 0px;
+  left: 300px;
+
+}
+
 .button {
   cursor: pointer;
 }
@@ -253,6 +261,7 @@ p {
   position: relative;
 }
 
+
 /*------------------------------------------------------------- REASONS FOR DISPLACEMENT ----*/
 
 .reasons-for-displacement {
@@ -404,65 +413,48 @@ p {
   width: 300px;
 }
 
-/*------------------------------------------------------------- PATTERNS OF DISPLACEMENTS ----*/
-
-.title-phases-of-displacement {
-  position: absolute;
-  left: 70px;
-  margin-top: 70px;
-  height: 34px;
-  width: 370px;
-  background-color: black;
-  color: white;
-  font-size: 2em;
-  padding: 20px;
+/*------------------------------------------------------------- Interact_map ----*/
+.outline {
+    fill: none;
+    stroke: #000000;
+    stroke-width:3;
+    stroke-miterlimit: 10;
 }
 
-#clickme-pod-phase1 {
+.map {
   position: absolute;
-  height: 34px;
-  width: 116px;
+  left: 500px;
+  margin-top: 10px;
+  width: 1000;
+  height: 700px;
+  padding: 15px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+  color: white;
+  display: on;
+}
+
+.yearbutton {
+  height: 30px;
+  width: 200px;
   background-color: black;
   color: white;
-  font-size: 1.2em;
-  left: 70px;
-  margin-top: 220px;
-  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-#clickme-pod-phase1:hover {
+.yearbutton:hover {
+
   -webkit-transform: scale(1.05);
  transform: scale(1.05);
 }
 
-.pod-phase1 {
-  position: absolute;
-  width: 370px;
-  left: 70px;
-  margin-top: 400px;
-  background-color: #FFED00;
-}
-
-#clickme-pod-phase2 {
-  position: absolute;
-  height: 34px;
-  width: 116px;
-  background-color: black;
-  color: white;
-  font-size: 1.2em;
-  left: 215px;
-  margin-top: 220px;
-  cursor: pointer;
-  text-align: center;
-  padding-top: 15px;
-}
-
-#clickme-pod-phase2:hover {
-  -webkit-transform: scale(1.05);
- transform: scale(1.05);
-}
 
 .pod-phase2 {
   position: absolute;
@@ -474,39 +466,32 @@ p {
   background-color: #FFED00;
 }
 
-#clickme-pod-phase3 {
-  position: absolute;
-  height: 34px;
-  width: 116px;
-  background-color: black;
-  color: white;
-  font-size: 1.2em;
-  left: 360px;
-  margin-top: 220px;
-  cursor: pointer;
-  text-align: center;
-  padding-top: 15px;
-}
-
-#clickme-pod-phase3:hover {
-  -webkit-transform: scale(1.05);
- transform: scale(1.05);
-}
-
-.pod-phase3 {
-  position: absolute;
-  width: 370px;
-  left: 70px;
-  margin-top: 400px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  background-color: #FFED00;
-}
-
-.show-definition {
-  opacity: 1;
-}
-
 .background-start-map {
   position: absolute;
+}
+
+
+
+
+.circle_idp {
+        stroke-width: 0;
+        fill: black;
+        opacity: 0.5;
+      }
+
+.circle_dead {
+        stroke: red;
+        stroke-width: 0;
+        fill: red;
+        opacity: 0.5;
+        }
+
+.button_wrap_v1{
+  position: absolute;
+  left: 0 px;
+  margin-top: 2px;
+  width: 220;
+  height: 780px;
+  padding: 15px;
+  color: black;
 }

@@ -5,6 +5,7 @@
     <title>IDPs of Syria</title>
     <script src="http://code.jquery.com/jquery-2.1.4.min.js" charset="utf-8"></script>
     <script src="scripts/script.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen" charset="utf-8">
   </head>
 
@@ -170,53 +171,59 @@
       </div>
     </div>
 
+
+
+
     <div class="page">
+      <div class="graph">
 
-      <img class="background-start-map" src="img/background_map1.jpg">
 
-
-      <div class="title-phases-of-displacement">
-        Phases of displacement
       </div>
 
-      <div id="clickme-pod-phase1" class="clickme" data-target=".pod-phase1">
-        Phase 1
-      </div>
-      <div id="clickme-pod-phase2" class="clickme" data-target=".pod-phase2">
-        Phase 2
-      </div>
-      <div id="clickme-pod-phase3" class="clickme" data-target=".pod-phase3">
-        Phase 3
+      <div class= "button_wrap_v1">
+
+          <div id="clickme-year2011" class="yearbutton">
+          2011
+        </div>
+        <div id="clickme-year2012" class="yearbutton">
+          2012
+        </div>
+        <div id="clickme-year2013" class="yearbutton">
+          2013
+        </div>
+        <div id="clickme-year2014" class="yearbutton">
+          2014
+        </div id="clickme-year2015" class="yearbutton">
+          2015
+        </div>
+
       </div>
 
-      <div class="pod-phase1">
-        Phase 1<br><br>
-        <p>Demonstration against marginalisation of the population and the corrupt Assad Regime.</p><br>
-        Flight reasons
-        <p>The most displacements were directly linked to the repressions from syrian authorities.</p><br>
-        Affected areas
-        <p>Urban areas, south and northeast.
-      </div>
+      <!-- <div id="interact_map" class="map"> -->
 
-      <div class="pod-phase2">
-        Phase 2<br><br>
-        <p>Demonstration against marginalisation of the population and the corrupt Assad Regime.</p><br>
-        Flight reasons
-        <p>The most displacements were directly linked to the repressions from syrian authorities.</p><br>
-        Affected areas
-        <p>Urban areas, south and northeast.
-      </div>
+        <svg class="graph" id="svg"  x="0px" y="0px"
+           width=80% height=70% viewBox="0 0 1000 707.077" enable-background="new 0 0 1000 707.077">
 
-      <div class="pod-phase3">
-        Phase 3<br><br>
-        <p>Demonstration against marginalisation of the population and the corrupt Assad Regime.</p><br>
-        Flight reasons
-        <p>The most displacements were directly linked to the repressions from syrian authorities.</p><br>
-        Affected areas
-        <p>Urban areas, south and northeast.
-      </div>
+              <polygon class="outline" id="outline_map"
+                points="505.674,647.756 818.156,460.521 839.663,406.121 840.927,318.829 854.844,302.383 854.844,269.49 835.868,237.862 847.253,179.667 902.917,170.812 950.992,105.026
+                    950.992,91.11 939.605,69.294 918.099,93.64 790.323,103.761 625.86,165.751 604.353,164.486 567.665,164.486 510.735,135.389
+                    446.214,159.426 419.647,169.546 395.61,169.546 386.754,148.04 343.741,148.04 334.885,212.56 348.801,226.476 315.909,226.476
+                    315.909,256.839 291.872,258.104 289.341,280.876 258.979,258.104 237.472,308.708 269.1,326.42 266.57,387.144 266.57,425.098
+                    296.932,430.159 307.053,430.159 318.439,431.423 307.053,446.605 331.09,459.255 337.416,492.148 298.198,522.511 275.425,546.548
+                    252.654,584.501 227.352,681.915 257.714,681.915 415.852,694.565 "/>
 
-    </div>
+                    <!-- <rect x="984" opacity="0.4" width="33.759" height="118.841"/>
+                    <rect id="Rect2012" x="970" y="118.841"  width="33.759" height="118.842"/>
+                    <rect x="984" y="237.683" opacity="0.4" width="33.759" height="118.842"/>
+                    <rect x="984" y="357.598" opacity="0.4" width="33.759" height="118.841"/>
+                    <rect x="984" y="476.438" opacity="0.4" width="33.759" height="118.842"/>
+                    <text transform="matrix(1.192488e-08 -1 1 1.192488e-08 990 109.9189)" fill="#FFED00" font-family="'Helvetica'" font-size="12">2011</text>
+                    <text transform="matrix(1.192488e-08 -1 1 1.192488e-08 990 150)" fill="#FFED00" font-family="'Helvetica'" font-size="12">2012</text> -->
+          </svg>
+        </div>
+      <!-- </div> -->
+
+
 
 
 
