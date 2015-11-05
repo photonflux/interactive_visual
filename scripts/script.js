@@ -38,6 +38,16 @@ $(document).ready(function(){
     }
   });
 
+  $('.clickme2').on('click', function(){
+    var target = $(this).data('target');
+    if($(target).hasClass('show-img')){
+      $(target).removeClass('show-img');
+    }else {
+      $(target).addClass('show-img');;
+    }
+  });
+
+
 
 
 

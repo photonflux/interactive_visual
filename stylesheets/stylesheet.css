@@ -85,7 +85,7 @@ p {
 .text-wrap-v1 {
   position: absolute;
   width: 275px;
-  height: 410px;
+  height: 670px;
   background-color: #FFED00;
   left: 50px;
   margin-top: 50px;
@@ -104,7 +104,7 @@ p {
   line-height: 1.3em;
 }
 
-.bv1-1 {
+.clickme2 {
   height: 30px;
   width: 200px;
   background-color: black;
@@ -119,31 +119,31 @@ p {
   transition-duration: 0.3s;
 }
 
-.bv1-1:hover {
+.clickme2:hover {
   -webkit-transform: scale(1.05);
  transform: scale(1.05);
 }
 
-.bv1-2 {
-  height: 30px;
-  width: 200px;
-  background-color: black;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  text-align: center;
-  padding-top: 12px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+.img-population {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.img-refugees {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-.bv1-2:hover {
-  -webkit-transform: scale(1.05);
- transform: scale(1.05);
+.img-idps {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
+.show-img {
+  opacity: 1;
+}
 /*------------------------------------------------------------- QUOTE 1----*/
 
 .quote-what-is-an-idp {
