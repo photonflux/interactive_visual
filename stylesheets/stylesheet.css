@@ -495,3 +495,9 @@ p {
   right: 100px;
   margin-top: 570px;
 }
+
+/*------------------------------------------------------------- PERSONAL STORY ----*/
+
+.personal-story {
+  position: absolute;
+}
