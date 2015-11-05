@@ -487,3 +487,11 @@ p {
   margin-top: 170px;
   padding: 15px;
 }
+
+.ratio {
+  position: absolute;
+  height: 142px;
+  width: 250px;
+  right: 100px;
+  margin-top: 570px;
+}
