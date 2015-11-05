@@ -496,32 +496,8 @@ p {
   margin-top: 570px;
 }
 
-#clickme-phase1 {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 200px;
-  margin-top: 250px;
-  cursor: pointer;
-}
 
-#clickme-phase1:hover {
-  -webkit-transform: scale(1.05);
- transform: scale(1.05);
-}
 
-.phase1-text {
-  position: absolute;
-  left: 200px;
-  height: 400px;
-  width: 290px;
-  margin-top: 170px;
-  padding: 15px;
-  background-color: #FFED00;
-  color: black;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
 
 /*------------------------------------------------------------- PERSONAL STORY ----*/
 

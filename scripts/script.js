@@ -135,13 +135,20 @@ $(document).ready(function(){
 
 
     }
-
+d3.selectAll('#phase1') .style('visibility', 'hidden');
+d3.selectAll('#phase2') .style('visibility', 'hidden');
+d3.selectAll('#phase3') .style('visibility', 'hidden');
+d3.selectAll('#phase4') .style('visibility', 'hidden');
 
 
         $( "#clickme-year2011" ).on('click', function() {
         year= "year2011";
         idp= "idp2011";
         console.log(year);
+        d3.selectAll('#phase2') .style('visibility', 'hidden');
+        d3.selectAll('#phase3') .style('visibility', 'hidden');
+        d3.selectAll('#phase1') .style('visibility', 'visible');
+        d3.selectAll('#phase4') .style('visibility', 'hidden');
         update();
         });
 
@@ -149,13 +156,22 @@ $(document).ready(function(){
         year= "year2012";
         idp= "idp2012";
         console.log(year);
+        d3.selectAll('#phase1') .style('visibility', 'hidden');
+        d3.selectAll('#phase3') .style('visibility', 'hidden');
+        d3.selectAll('#phase2') .style('visibility', 'visible');
+        d3.selectAll('#phase4') .style('visibility', 'hidden');
         update();
+
         });
 
         $( "#clickme-year2013" ).on('click', function() {
         year= "year2013";
         idp= "idp2013";
         console.log(year);
+        d3.selectAll('#phase1') .style('visibility', 'hidden');
+        d3.selectAll('#phase2') .style('visibility', 'hidden');
+        d3.selectAll('#phase3') .style('visibility', 'visible');
+        d3.selectAll('#phase4') .style('visibility', 'hidden');
         update();
         });
 
@@ -163,6 +179,10 @@ $(document).ready(function(){
         year= "year2014";
         idp= "idp2014";
         console.log(year);
+        d3.selectAll('#phase1') .style('visibility', 'hidden');
+        d3.selectAll('#phase2') .style('visibility', 'hidden');
+        d3.selectAll('#phase3') .style('visibility', 'visible');
+        d3.selectAll('#phase4') .style('visibility', 'hidden');
         update();
         });
 
@@ -170,6 +190,10 @@ $(document).ready(function(){
         year= "year2015";
         idp= "idp2015";
         console.log(year);
+        d3.selectAll('#phase1') .style('visibility', 'hidden');
+        d3.selectAll('#phase2') .style('visibility', 'hidden');
+        d3.selectAll('#phase3') .style('visibility', 'hidden');
+        d3.selectAll('#phase4') .style('visibility', 'visible');
         update();
         });
 
