@@ -62,10 +62,24 @@ $(document).ready(function(){
   var groups;
   var year = "year2011";
   var idp ="idp2011";
+  var tip;
+
 
 
       d3.csv('data2.csv', convert, function(data){    //loading data
          console.log(data);
+
+
+         tip = d3.tip()
+         .attr('class', 'd3-tip')
+         .offset([-10, 0])
+         .html(function(d) {
+           console.log("hello");
+           return "<span>" + d[year] + "</span>";
+         });
+
+         svg.call(tip);
+         console.log(tip);
 
           groups = svg.selectAll('g')
                   .data(data)
@@ -76,18 +90,17 @@ $(document).ready(function(){
                     .attr('class', "circle_idp")
                      .attr("id", function(d) {
                         return d.region; })
-                    .on("mouseover", function(d) {
-                            d3.select(this).attr('id')});    // presumes that <rect> has an id!
-                    // .attr('id', function(d){return d.region)});
+                    // .on("mouseover", function(d) {
+                    //         d3.select(this).attr('id')});    // presumes that <rect> has an id!
+                    // // .attr('id', function(d){return d.region)});
 
                     groups.append("circle")
                     .attr('class', "circle_dead")
                     .attr("id", function(d) {
                        return d.region; })
-                    .on("mouseover", function(d) {
-                        d3.select(this).attr('id');// presumes that <rect> has an id!
-                          })
-
+                    // .on("mouseover", function(d) {
+                    //     d3.select(this).attr('id');// presumes that <rect> has an id!
+                    //       })
 
 
          update();
@@ -113,15 +126,19 @@ $(document).ready(function(){
           .range([0,40]);
 
           groups.selectAll('.circle_idp')
-          .attr('r', function(d){ return scale_idp(d[idp]); })
+          .attr('r', function(d){ return (scale_idp(d[idp])+ scale_deaths(d[year])); })
           .attr('cx', function(d){ return d.cx; })
           .attr('cy', function(d){ return d.cy; })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide)
 
 
           groups.selectAll('.circle_dead')
           .attr('r', function(d){ return scale_deaths(d[year]); })
           .attr('cx', function(d){ return d.cx; })
           .attr('cy', function(d){ return d.cy; })
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide)
 
 
     }

@@ -471,8 +471,6 @@ p {
 }
 
 
-
-
 .circle_idp {
         stroke-width: 0;
         fill: black;
@@ -483,7 +481,7 @@ p {
         stroke: red;
         stroke-width: 0;
         fill: red;
-        opacity: 0.5;
+        opacity: 0.3;
         }
 
 .button_wrap_v1{
