@@ -32,14 +32,6 @@ p {
   overflow: hidden;
 }
 
-.graph{
-  height: 100%;
-  width: 80%;
-  right: 0px;
-  left: 300px;
-
-}
-
 .button {
   cursor: pointer;
 }
@@ -416,7 +408,6 @@ p {
 /*------------------------------------------------------------- Interact_map ----*/
 .outline {
     fill: none;
-    stroke: #000000;
     stroke-width:3;
     stroke-miterlimit: 10;
 }
@@ -436,12 +427,10 @@ p {
 
 .yearbutton {
   height: 30px;
-  width: 200px;
+  width: 100px;
   background-color: black;
   color: white;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   padding-top: 12px;
   cursor: pointer;
@@ -455,43 +444,38 @@ p {
  transform: scale(1.05);
 }
 
-
-.pod-phase2 {
-  position: absolute;
-  width: 370px;
-  left: 70px;
-  margin-top: 400px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  background-color: #FFED00;
-}
-
 .background-start-map {
   position: absolute;
 }
 
-
-
-
 .circle_idp {
-        stroke-width: 0;
-        fill: black;
-        opacity: 0.5;
-      }
+  stroke-width: 0;
+  fill: white;
+  opacity: 0.5;
+}
 
 .circle_dead {
-        stroke: red;
-        stroke-width: 0;
-        fill: red;
-        opacity: 0.5;
-        }
+  stroke: red;
+  stroke-width: 0;
+  fill: black;
+}
 
 .button_wrap_v1{
   position: absolute;
-  left: 0 px;
-  margin-top: 2px;
-  width: 220;
-  height: 780px;
-  padding: 15px;
+  left: 70px;
+  margin-top: 200px;
+  width: 100px;
+  height: 300px;
   color: black;
+}
+
+#svg {
+  position: absolute;
+  left: 150px;
+}
+
+.background-map {
+  position: absolute;
+  left: -90px;
+  margin-top: -10px;
 }
